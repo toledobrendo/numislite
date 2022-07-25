@@ -1,0 +1,26 @@
+<form class="search-card" fxLayout="row wrap" fxLayoutGap="15px" (ngSubmit)="search()" name="searchForm">
+  <mat-form-field fxFlex="0 0 auto" class="search-field">
+    <mat-label>Coin Number</mat-label>
+    <input [(ngModel)]="searchObj.id" name="id" matInput>
+  </mat-form-field>
+  <mat-form-field fxFlex="0 0 auto" class="search-field">
+    <mat-label>Country</mat-label>
+    <mat-select [(ngModel)]="searchObj.issuer" name="issuer">
+      <mat-option value="AN">Angola</mat-option>
+      <mat-option value="PH">Philippines</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field fxFlex="0 0 auto" class="search-field">
+    <mat-label>Year</mat-label>
+    <input type="number" [(ngModel)]="searchObj.year" matInput name="year">
+  </mat-form-field>
+  <mat-form-field fxFlex="0 0 auto" class="search-field">
+    <mat-label>Denomination</mat-label>
+    <input type="type" [(ngModel)]="searchObj.denomination" matInput name="denomination">
+  </mat-form-field>
+  <button class="action-button search-button" mat-flat-button color="primary">Search</button>
+  <button class="action-button search-button" mat-flat-button color="na" (click)="clear()">Clear</button>
+  <div *ngIf="loading">
+    <mat-spinner [mode]="'indeterminate'" [diameter]="30"></mat-spinner>
+  </div>
+</form>

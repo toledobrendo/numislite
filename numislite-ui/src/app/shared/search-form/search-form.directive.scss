@@ -1,0 +1,20 @@
+@import '../../../assets/styles/responsive.mixin';
+
+mat-spinner {
+  margin-top: 15px;
+}
+
+.search-button {
+  margin: .25em 0;
+}
+
+.search-card {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-field {
+  @include screen('xs') {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+<mat-card fxFlex="0 0 auto" class="list-card">
+  <mat-card-content>
+    <div class="list-item" fxLayout="row wrap">
+      <div fxFlex="0 0 auto" class="list-image">
+        <img class="list-thumbnail" src="{{coin.obverseImg}}"/>
+        <img class="list-thumbnail" src="{{coin.reverseImg}}"/>
+      </div>
+      <div fxFlex="0 0 auto" class="list-details">
+        <a routerLink="/{{key}}/view">{{coin.name}}</a><br/>
+        {{coin.country}}<br/>
+        {{coin.yearStart}}-{{coin.yearEnd}}<br/>
+        {{coin.material}} • {{coin.weight}} g • {{coin.diameter}} mm
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

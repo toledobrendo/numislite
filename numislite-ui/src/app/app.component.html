@@ -1,0 +1,16 @@
+<div>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Numislite</span>
+      <div class="nav-button-group">
+        <a mat-button [routerLink]="'/search'" [routerLinkActive]="'mat-accent'">Search</a>
+        <a mat-button [routerLink]="'/wishlist'" [routerLinkActive]="'mat-accent'">Wishlist</a>
+        <a mat-button [routerLink]="'/collection'" [routerLinkActive]="'mat-accent'">Collection</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

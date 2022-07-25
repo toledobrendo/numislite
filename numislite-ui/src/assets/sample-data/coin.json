@@ -1,0 +1,84 @@
+{
+  "id": 420,
+  "url": "https://en.numista.com/catalogue/pieces420.html",
+  "title": "5 Cents - Victoria",
+  "category": "coin",
+  "issuer": {
+    "code": "canada",
+    "name": "Canada"
+  },
+  "min_year": 1858,
+  "max_year": 1901,
+  "type": "Standard circulation coin",
+  "ruler": [
+    {
+      "id": 1774,
+      "name": "Victoria",
+      "wikidata_id": "Q9439"
+    }
+  ],
+  "value": {
+    "text": "5 Cents",
+    "numeric_value": 0.05,
+    "currency": {
+      "id": 44,
+      "name": "Canadian dollar",
+      "full_name": "Canadian dollar (1858-date)"
+    }
+  },
+  "shape": "Round",
+  "composition": {
+    "text": "Silver (.925)"
+  },
+  "weight": 1.167,
+  "size": 15.494,
+  "thickness": 0.7,
+  "orientation": "coin",
+  "obverse": {
+    "engravers": [
+      "Leonard Charles Wyon"
+    ],
+    "description": "The portrait in left profile of Victoria is surrounded with the inscriptions &quot;CANADA&quot; and &quot;VICTORIA DEI GRATIA REGINA&quot; (Victoria, Queen by the grace of God)",
+    "lettering": "VICTORIA DEI GRATIA REGINA.\r\nCANADA",
+    "picture": "https://en.numista.com/catalogue/photos/canada/1009-original.jpg",
+    "thumbnail": "https://en.numista.com/catalogue/photos/canada/1009-135.jpg",
+    "picture_copyright": "Heritage Auctions",
+    "picture_copyright_url": "https://www.ha.com"
+  },
+  "reverse": {
+    "engravers": [
+      "Leonard Charles Wyon"
+    ],
+    "description": "The face value is surrounded with two maple boughs and the crown of Queen Victoria",
+    "lettering": "5\r\nCENTS\r\n1858",
+    "picture": "https://en.numista.com/catalogue/photos/canada/1010-original.jpg",
+    "thumbnail": "https://en.numista.com/catalogue/photos/canada/1010-135.jpg",
+    "picture_copyright": "Heritage Auctions",
+    "picture_copyright_url": "https://www.ha.com"
+  },
+  "edge": {
+    "description": "Reeded"
+  },
+  "references": [
+    {
+      "catalogue": {
+        "id": 3,
+        "code": "KM"
+      },
+      "number": "2"
+    },
+    {
+      "catalogue": {
+        "id": 24,
+        "code": "Schön"
+      },
+      "number": "2"
+    }
+  ],
+  "localMeasurements" : {
+    "weight": 1.2,
+    "size": 15,
+    "thickness": 0.7
+  },
+  "status" : "In collection"
+}

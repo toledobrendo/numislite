@@ -1,0 +1,17 @@
+.center-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-card {
+  max-width: 400px;
+}
+
+.login-content {
+  height: 100%;
+  place-content: stretch center;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+}

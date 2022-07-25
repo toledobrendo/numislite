@@ -1,0 +1,45 @@
+<h2>Add to Collection</h2>
+<form #issueForm="ngForm" (ngSubmit)="save()" name="issueForm">
+  <mat-form-field>
+    <mat-label>Year</mat-label>
+    <mat-select name="year" [(ngModel)]="issue.year" [disabled]="update"
+                ngModel [appAutofocus]="!update" required>
+      <mat-option *ngFor="let yearIssue of yearIssues"
+        [value]="yearIssue">{{yearIssue}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Buying Price</mat-label>
+    <input type="number" name="buyingPrice" [(ngModel)]="issue.buyingPrice" [appAutofocus]="update"
+           ngModel matInput required>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Diameter (mm)</mat-label>
+    <input type="number" name="size" [(ngModel)]="issue.size" ngModel matInput required>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Weight (g)</mat-label>
+    <input type="number" name="weight" [(ngModel)]="issue.weight" matInput required>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Grade</mat-label>
+    <mat-select name="grade" [(ngModel)]="issue.grade" ngModel required>
+      <mat-option [value]="'UNC'">Uncirculated</mat-option>
+      <mat-option [value]="'FINE'">Fine</mat-option>
+      <mat-option [value]="'GOOD'">Good</mat-option>
+      <mat-option [value]="'BAD'">Bad</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Stored In:</mat-label>
+    <mat-select name="storage" [(ngModel)]="issue.storage" ngModel required>
+      <mat-option [value]="'CARDBOARD'">Cardboard</mat-option>
+      <mat-option [value]="'CAPSULE'">Capsule</mat-option>
+      <mat-option [value]="'NONE'">None</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <button mat-flat-button color="accent" (click)="save()" [disabled]="issueForm.invalid">Save</button>
+    <button mat-flat-button color="na" (click)="close()" matDialogClose>Close</button>
+  </div>
+</form>

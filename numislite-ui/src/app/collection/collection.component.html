@@ -1,0 +1,12 @@
+<p><a routerLink="/">Numislite</a> / Collection</p>
+<app-search-form (onSubmit)="search($event)" [loading]="loading" [cacheKey]="'collection'"></app-search-form>
+<div>
+  <div *ngFor="let group of collection">
+    <mat-card class="group-header">
+      <mat-card-content>{{group.groupName}}</mat-card-content>
+    </mat-card>
+    <div fxLayout="row wrap" fxFlexFill>
+      <app-coin-item [coin]="coin" *ngFor="let coin of group.coins" [key]="'collection'"></app-coin-item>
+    </div>
+  </div>
+</div>

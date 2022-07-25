@@ -1,0 +1,78 @@
+[
+  {
+    "groupName": "Philippines",
+    "coins": [
+      {
+        "name": "XX (20 Reis) - Pedro II (Porto mint)",
+        "country": "Angola",
+        "yearStart": 1693,
+        "yearEnd": 1699,
+        "material": "Copper",
+        "weight": 14.34,
+        "diameter": 36,
+        "reverseImg": "/assets/img/136-original.jpg",
+        "obverseImg": "/assets/img/137-original.jpg"
+      },
+      {
+        "name": "XX (20 Reis) - Pedro II (Porto mint)",
+        "country": "Angola",
+        "yearStart": 1693,
+        "yearEnd": 1699,
+        "material": "Copper",
+        "weight": 14.34,
+        "diameter": 36,
+        "reverseImg": "/assets/img/136-original.jpg",
+        "obverseImg": "/assets/img/137-original.jpg"
+      },
+      {
+        "name": "XX (20 Reis) - Pedro II (Porto mint)",
+        "country": "Angola",
+        "yearStart": 1693,
+        "yearEnd": 1699,
+        "material": "Copper",
+        "weight": 14.34,
+        "diameter": 36,
+        "reverseImg": "/assets/img/136-original.jpg",
+        "obverseImg": "/assets/img/137-original.jpg"
+      },
+      {
+        "name": "XX (20 Reis) - Pedro II (Porto mint)",
+        "country": "Angola",
+        "yearStart": 1693,
+        "yearEnd": 1699,
+        "material": "Copper",
+        "weight": 14.34,
+        "diameter": 36,
+        "reverseImg": "/assets/img/136-original.jpg",
+        "obverseImg": "/assets/img/137-original.jpg"
+      }
+    ]
+  },
+  {
+    "groupName": "Angola",
+    "coins": [
+      {
+        "name": "XX (20 Reis) - Pedro II (Porto mint)",
+        "country": "Angola",
+        "yearStart": 1693,
+        "yearEnd": 1699,
+        "material": "Copper",
+        "weight": 14.34,
+        "diameter": 36,
+        "reverseImg": "/assets/img/136-original.jpg",
+        "obverseImg": "/assets/img/137-original.jpg"
+      },
+      {
+        "name": "XX (20 Reis) - Pedro II (Porto mint)",
+        "country": "Angola",
+        "yearStart": 1693,
+        "yearEnd": 1699,
+        "material": "Copper",
+        "weight": 14.34,
+        "diameter": 36,
+        "reverseImg": "/assets/img/136-original.jpg",
+        "obverseImg": "/assets/img/137-original.jpg"
+      }
+    ]
+  }
+]

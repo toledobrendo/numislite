@@ -1,0 +1,46 @@
+[
+  {
+    "id": 51757,
+    "is_dated": true,
+    "year": 1823,
+    "gregorian_year": 1823,
+    "mint_letter": "R",
+    "mintage": 1700000,
+    "comment": "KM#360.1 (Rio de Janeiro)",
+    "acquired": true,
+    "buyingPrice": 100,
+    "diameter": 15,
+    "weight": 1.2,
+    "grade": "GOOD",
+    "storage": "CARDBOARD"
+  },
+  {
+    "id": 51758,
+    "is_dated": true,
+    "year": 1824,
+    "gregorian_year": 1824,
+    "mint_letter": "R",
+    "comment": "KM#360.1 (Rio de Janeiro, BRSA)",
+    "acquired": false
+  },
+  {
+    "id": 51759,
+    "is_dated": true,
+    "year": 1824,
+    "gregorian_year": 1824,
+    "mint_letter": "R",
+    "mintage": 4955564,
+    "comment": "KM#360.1 (Rio de Janeiro)",
+    "acquired": false
+  },
+  {
+    "id": 51767,
+    "is_dated": true,
+    "year": 1825,
+    "gregorian_year": 1825,
+    "mint_letter": "B",
+    "mintage": 581808,
+    "comment": "KM#360.2 (Bahia)",
+    "acquired": false
+  }
+]

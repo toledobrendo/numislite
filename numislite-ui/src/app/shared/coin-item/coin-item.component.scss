@@ -1,0 +1,40 @@
+@import '../../../assets/styles/responsive.mixin';
+
+.list-details {
+  justify-content: normal;
+  height: 100%;
+  margin-left: 20px;
+  @include screen('xs') {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+.list-thumbnail {
+  height: 100px;
+}
+
+.list-image {
+  @include screen('xs') {
+    margin: auto;
+  }
+}
+
+.list-item {
+  height: 100px;
+  @include screen('xs') {
+    height: auto;
+  }
+}
+
+.list-card {
+  margin-top: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: 550px;
+  @include screen('xs') {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

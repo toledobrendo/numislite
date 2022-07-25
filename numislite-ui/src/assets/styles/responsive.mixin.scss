@@ -1,0 +1,19 @@
+// From: https://levelup.gitconnected.com/handle-media-breakpoints-in-angular-and-sass-b8cef4137747
+
+$breakpoints: (
+  'lg': 1920px,
+  'md': 1280px,
+  'sm': 960px,
+  'xs': 600px
+);
+
+@mixin screen($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint, '#{$breakpoint}' can't be found";
+  }
+}

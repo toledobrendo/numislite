@@ -1,0 +1,25 @@
+@import '../assets/styles/responsive.mixin';
+
+.content {
+  width: 94%;
+  margin: auto;
+  display: block;
+}
+
+::ng-deep .mat-form-field {
+  font-size: 14px;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.nav-button-group {
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+.mat-button.mat-accent, .mat-icon-button.mat-accent, .mat-stroked-button.mat-accent {
+  color: white;
+  background-color: #293a98;
+}

@@ -1,0 +1,134 @@
+<div class="coin-content">
+  <p><a routerLink="/">Numislite</a> / <a routerLink="../">{{previousRouteLabel}}</a> / 5 Cents - Victoria</p>
+  <h2>{{coin.title}}</h2>
+  <div class="page-container">
+    <div class="features">
+      <mat-card>
+        <mat-card-content fxLayout="row wrap">
+          <button class="action-button" mat-flat-button color="primary" (click)="addToWishlist()">Add to Wishlist</button>
+          <button class="action-button" mat-flat-button color="accent" (click)="openAddEditToCollection(false, null)">Add to Collection</button>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <div class="desc-title">
+          <mat-card-title>Features</mat-card-title>
+        </div>
+        <mat-card-content>
+          <div class="section">
+            <div class="feature-item" fxLayout="row wrap" *ngFor="let feat of features">
+              <div class="feat-label"><b>{{feat.label}}</b></div>
+              <div class="feat-value">{{feat.value}}</div>
+            </div>
+            <div class="feature-item" fxLayout="row wrap">
+              <div class="feat-label"><b>Reference</b></div>
+              <div class="feat-value"><a href="{{coin.url}}" target="_blank">Numista</a></div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="feature-item" fxLayout="row">
+              <div fxFlex="0 1 150px">&nbsp;</div>
+              <div fxFlex="0 1 130px"><b>Numista</b></div>
+              <div fxFlex="0 0 auto"><b>Local</b></div>
+            </div>
+            <div class="feature-item" fxLayout="row" *ngFor="let measurement of measurements">
+              <div fxFlex="0 1 150px"><b>{{measurement.label}}</b></div>
+              <div fxFlex="0 1 130px">{{measurement.numistaNum}}{{measurement.unit}}</div>
+              <div fxFlex="0 0 auto">{{measurement.localNum}}{{measurement.unit}}</div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <div class="desc-title">
+          <mat-card-title>Issues</mat-card-title>
+        </div>
+        <mat-card-content>
+          <div fxLayout="row wrap" fxLayoutGap="10px">
+            <button class="issue-button" mat-flat-button
+                    color="{{issue.acquired ? 'accent' : 'na'}}"
+                    *ngFor="let issue of issues"
+                    (click)="openAddEditToCollection(true, issue)">{{issue.year}}</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="details">
+      <mat-card>
+        <div class="desc-title">
+          <mat-card-title>Obverse</mat-card-title>
+        </div>
+        <div fxLayout="row wrap">
+          <img mat-card-lg-image src="{{coin.obverse?.thumbnail}}" fxFlex="0 0 auto" class="coin-image"/>
+          <mat-card-content class="coin-description">
+            <div class="section" *ngIf="coin.obverse?.description">
+              <div class="header">Description</div>
+              <hr class="separator"/>
+              <div [innerHTML]="coin.obverse?.description"></div>
+            </div>
+            <div class="section" *ngIf="coin.obverse?.lettering">
+              <div class="header">Lettering</div>
+              <hr class="separator"/>
+              <div [innerHTML]="coin.obverse?.lettering"></div>
+            </div>
+            <div class="section" *ngIf="coin.obverse?.engravers">
+              <div class="header">Engravers</div>
+              <hr class="separator"/>
+              <div [innerHTML]="concat(coin.obverse?.engravers)"></div>
+            </div>
+          </mat-card-content>
+        </div>
+      </mat-card>
+      <mat-card>
+        <div class="desc-title">
+          <mat-card-title>Reverse</mat-card-title>
+        </div>
+        <div fxLayout="row wrap">
+          <img mat-card-lg-image src="{{coin.reverse?.thumbnail}}" fxFlex="0 0 auto" class="coin-image"/>
+          <mat-card-content class="coin-description">
+            <div class="section" *ngIf="coin.reverse?.description">
+              <div class="header">Description</div>
+              <hr class="separator"/>
+              <div [innerHTML]="coin.reverse?.description"></div>
+            </div>
+            <div class="section" *ngIf="coin.reverse?.lettering">
+              <div class="header">Lettering</div>
+              <hr class="separator"/>
+              <div [innerHTML]="coin.reverse?.lettering"></div>
+            </div>
+            <div class="section" *ngIf="coin.reverse?.engravers">
+              <div class="header">Engravers</div>
+              <hr class="separator"/>
+              <div [innerHTML]="concat(coin.reverse?.engravers)"></div>
+            </div>
+          </mat-card-content>
+        </div>
+      </mat-card>
+      <mat-card>
+        <div class="desc-title">
+          <mat-card-title>Edge</mat-card-title>
+        </div>
+        <div fxLayout="row wrap">
+          <img mat-card-lg-image src="{{coin.edge?.thumbnail ? coin.edge.thumbnail : '/assets/img/No_image_available.svg.webp'}}"
+               fxFlex="0 0 auto" class="coin-image"/>
+          <mat-card-content class="coin-description">
+            <div class="section" *ngIf="coin.edge?.description">
+              <div class="header">Description</div>
+              <hr class="separator"/>
+              <div [innerHTML]="coin.edge?.description"></div>
+            </div>
+            <div class="section" *ngIf="coin.edge?.lettering">
+              <div class="header">Lettering</div>
+              <hr class="separator"/>
+              <div [innerHTML]="coin.edge?.lettering"></div>
+            </div>
+            <div class="section" *ngIf="coin.edge?.engravers">
+              <div class="header">Engravers</div>
+              <hr class="separator"/>
+              <div [innerHTML]="concat(coin.edge?.engravers)"></div>
+            </div>
+          </mat-card-content>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

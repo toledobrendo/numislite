@@ -1,0 +1,5 @@
+<p><a routerLink="/">Numislite</a> / Search (Hell yeah baby)</p>
+<app-search-form (onSubmit)="search($event)"></app-search-form>
+<div fxLayout="row wrap" fxFlexFill>
+  <app-coin-item [coin]="coin" *ngFor="let coin of coins" [key]="'search'"></app-coin-item>
+</div>
